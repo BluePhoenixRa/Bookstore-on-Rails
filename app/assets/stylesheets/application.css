@@ -37,3 +37,22 @@ header {
   padding-top: 20px;
   text-align: center;
 }
+
+#books-index {
+  text-align: center;
+}
+
+#books-index h3{
+  height: 50px;
+}
+
+#books-index img{
+  width: 100%;
+  padding: 3px;
+  border: 1px #cccccc solid;
+}
+
+#books-index .btn{
+  display:block;
+  margin-top: 20px;
+}
