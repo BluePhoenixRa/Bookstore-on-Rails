@@ -56,3 +56,18 @@ header {
   display:block;
   margin-top: 20px;
 }
+
+.books-show-left {
+  float: left;
+  width: 40%;
+}
+
+.books-show-right {
+  float: left;
+  width: 60%auto;
+  margin-top: 10px;
+}
+
+#books-show .btn{
+  margin: 20px 0 0 70px;
+}

@@ -1,5 +1,7 @@
 class CategoriesController < ApplicationController
   def new
+    @page_title = 'Add New Categoy'
+    @category = Categoy.new
   end
 
   def create
