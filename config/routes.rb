@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :categories
   resources :publishers
 
+  get 'about' => 'about#index'
+
   get 'publishers/new'
 
   get 'publishers/create'

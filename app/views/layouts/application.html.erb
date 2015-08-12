@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bookstore</title>
+  <title><%= @page_title ? @page_title: 'Welcome' %> - Bookstore on Rails</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <%= render 'layouts/bootstrap' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'layouts/navbar' %>
 
-<%= yield %>
+  <header>
+    <div class="container">
+      <h1><%= @page_title ? @page_title: 'Welcome' %></h1>
+    </div>
+  </header>
+
+  <div class ="container">
+    <div class="row">
+      <div class="col-md-8">
+        <%= yield %>
+      </div>
+      <div class="col-md-4">
+        <%= render 'layouts/sidebar' %>
+      </div>
+    </div>
+  </div>
+
+    <%= render 'layouts/footer' %>
 
 </body>
 </html>
