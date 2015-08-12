@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root 'books#index'
+
+  resources :books
+  resources :authors
+  resources :categories
+  resources :publishers
+
   get 'publishers/new'
 
   get 'publishers/create'
