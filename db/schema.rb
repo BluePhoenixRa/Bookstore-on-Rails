@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150812230542) do
+ActiveRecord::Schema.define(version: 20150813010736) do
 
   create_table "authors", force: true do |t|
     t.string   "first_name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20150812230542) do
     t.integer  "pages"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "coverpath"
   end
 
   create_table "categories", force: true do |t|

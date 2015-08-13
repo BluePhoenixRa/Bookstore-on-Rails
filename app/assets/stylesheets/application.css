@@ -23,13 +23,13 @@ body {
  }
 
 header {
-  background: #333333;
+  background: #08cbff;
   color: #FFFFFF;
   height: 80px;
   margin-bottom: 20px;
 }
 
-.navbar-fixed-bottom {
+.footer {
   background: #333333;
   color: #FFFFFF;
   height: 80px;
