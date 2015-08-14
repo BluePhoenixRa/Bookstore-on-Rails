@@ -8,3 +8,5 @@ The Ruby Way of fixing this would be to turn it into a partial, such as _books.h
 * Ruby version: 2.0
 * Rails version: 4.1
 * Database: local MySQL
+
+Note: This is an unmoderated and all-access app, there's no Admin/User profile page or any sort of restrictions. Anyone can make a new book, author, category, and publisher.
