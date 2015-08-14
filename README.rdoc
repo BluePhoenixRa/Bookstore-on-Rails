@@ -1,6 +1,6 @@
 == README
 
-Images of the finished product can be seen inside "_finalimages" folder.
+Images of the finished product can be seen over at http://imgur.com/a/KJpDJ
 
 The Bookstore app doesn't entirely follow the 'DRY' method, becuase the Categories#show is an exact replica of the Books#show.
 The Ruby Way of fixing this would be to turn it into a partial, such as _books.html.erb and render it on both the pages. I willing did it the non-DRY way.
