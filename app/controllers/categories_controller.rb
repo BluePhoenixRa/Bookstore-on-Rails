@@ -24,9 +24,14 @@ class CategoriesController < ApplicationController
   end
 
   def index
+    @categories = Category.all
   end
 
   def show
+    @category = Category.find(params[:id])
+    @page_title = @category.name
+    @categories = Category.all
+    @book = @category.books
   end
 
   private
