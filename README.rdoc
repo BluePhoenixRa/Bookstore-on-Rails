@@ -1,11 +1,7 @@
 == README
 
------
 The Bookstore app doesn't entirely follow the 'DRY' method, becuase the Categories#show is an exact replica of the Books#show.
 The Ruby Way of fixing this would be to turn it into a partial, such as _books.html.erb and render it on both the pages. I willing did it the non-DRY way.
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
 * Ruby version: 2.0
 
