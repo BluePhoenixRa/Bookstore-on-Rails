@@ -1,5 +1,3 @@
-<h2>Add New Publisher</h2>
-
 <%= form_for @publisher do |f| %>
   <!-- Validate from input -->
   <% if @publisher.errors.any? %>
@@ -12,7 +10,7 @@
 
   <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.text_field :name, class: 'form-control', placeholder: "O'Riely, Penguin, etc." %>
   </div>
 
   <%= f.submit "Submit", class: 'btn btn-primary' %>
