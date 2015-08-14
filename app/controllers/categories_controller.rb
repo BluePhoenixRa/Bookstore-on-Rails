@@ -26,7 +26,7 @@ class CategoriesController < ApplicationController
 
   def edit
     @category = Category.find(params[:id])
-    @page_title = 'Edit Category'
+    @page_title = 'Edit Category: '+@category.name
   end
 
   def destroy

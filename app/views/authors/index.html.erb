@@ -1,2 +1,13 @@
-<h1>Authors#index</h1>
-<p>Find me in app/views/authors/index.html.erb</p>
+<table class="table table-striped">
+  <tr>
+    <th>Author Name</th>
+    <th>Actions</th>
+  </tr>
+  <% @author.each do |a| %>
+    <tr>
+      <td><%= a.first_name %> <%= a.last_name %></td>
+      <td><%= link_to 'Edit', edit_author_path(a.id) %> | <%= link_to 'Delete', author_path(a), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+
+</table>
