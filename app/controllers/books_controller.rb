@@ -18,12 +18,28 @@ class BooksController < ApplicationController
   end
 
   def update
+    @book = Book.find(params[:id])
+    if @book.update(book_params)
+      flash[:notice] = "Book updated successfully!"
+      redirect_to books_path
+    else
+      render 'new'
+    end
   end
 
   def edit
+    @book = Book.find(params[:id])
+    @page_title = 'Edit Book: '+@book.title
   end
 
   def destroy
+    @book = Book.find(params[:id])
+    if @book.destroy
+      flash[:alert] = "Book deleted successfully!"
+      redirect_to books_path
+    else
+      render 'new'
+    end
   end
 
   def index
@@ -33,6 +49,7 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    @page_title = @book.title
     @categories = Category.all
   end
 
