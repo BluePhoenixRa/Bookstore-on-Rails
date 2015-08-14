@@ -1,18 +1,1 @@
-<%= form_for @category do |f| %>
-<!-- Validate form input -->
-  <% if @category.errors.any? %>
-    <div class="alert alert-danger">
-      <% @category.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </div>
-  <% end %>
-
-  <div class="form-group">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control', placeholder: "Such as Ruby on Rails, PHP, HTML5" %>
-  </div>
-
-  <%= f.submit "Submit", class: 'btn btn-primary' %>
-  <%= link_to "Cancel", categories_path, class: 'btn btn-default' %>
-<% end %>
+<%= render 'form' %>
